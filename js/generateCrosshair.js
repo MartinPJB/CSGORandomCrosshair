@@ -45,11 +45,6 @@ function generateCrosshair() {
     const fixedcrosshairgap = Math.floor(Math.random() * 256);
     resultCommand += `;cl_fixedcrosshairgap ${fixedcrosshairgap}`;
 
-
-    // Génère un style de crosshair aléatoire
-    const style = Math.floor(Math.random() * 5);
-    resultCommand += `;cl_crosshairstyle ${style}`;
-
     return resultCommand;
 }
 
